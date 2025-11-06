@@ -1,0 +1,5 @@
+<!-- Basit placeholder logo: değiştirmek için SVG'yi güncelleyin -->
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40" fill="none">
+  <rect width="160" height="40" rx="6" fill="#0B6EF6"/>
+  <text x="14" y="26" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#fff">Yücel<span style="font-weight:700"> Kimya</span></text>
+</svg>

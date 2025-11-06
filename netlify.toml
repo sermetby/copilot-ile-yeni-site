@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+  command = ""
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+# Eğer özel redirect veya header'lar gerekirse buraya ekleyebilirsiniz
+# [[redirects]]
+#   from = "/old-path"
+#   to = "/new-path"
+#   status = 301

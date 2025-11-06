@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>İletişim — Yücel Kimya</title>
+  <meta name="description" content="Yücel Kimya ile iletişime geçin — satış, teknik ve ihracat talepleri için iletişim bilgileri." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Yücel Kimya" style="height:28px;vertical-align:middle"/> <span style="margin-left:.5rem;">Yücel Kimya</span></a>
+      <button id="nav-toggle-5" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav-5">☰</button>
+      <nav id="primary-nav-5" class="primary-nav" aria-label="Ana navigasyon" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="products.html">Ürünler</a></li>
+          <li><a href="private-label.html">Private Label</a></li>
+          <li><a href="about.html">Biz Kimiz</a></li>
+          <li><a class="active" href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>İletişim</h1>
+        <p>Satış, teknik destek veya ihracat talepleriniz için aşağıdaki formu kullanabilir veya doğrudan iletişim bilgilerinden bize ulaşabilirsiniz.</p>
+
+        <div class="contact-grid">
+          <div>
+            <h3>İletişim Bilgileri</h3>
+            <p>Adres: Örnek Mah. Sanayi Cad. No:10, İstanbul, Türkiye</p>
+            <p>Telefon: +90 212 000 00 00</p>
+            <p>E-posta: info@yucelkimya.example</p>
+            <p>İhracat: export@yucelkimya.example</p>
+          </div>
+
+          <div>
+            <h3>Mesaj Gönder</h3>
+            <!-- Netlify Forms: data-netlify + honeypot + form-name -->
+            <form class="contact-form" name="contact" method="POST" action="/thanks.html" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+              <p style="display:none">
+                <label>Leave this field empty: <input name="bot-field" /></label>
+              </p>
+
+              <label>
+                Adınız
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                E-posta
+                <input type="email" name="email" required />
+              </label>
+              <label>
+                Konu
+                <input type="text" name="subject" />
+              </label>
+              <label>
+                Mesaj
+                <textarea name="message" rows="5" required></textarea>
+              </label>
+              <button class="btn" type="submit">Gönder</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-5"></span> Yücel Kimya</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

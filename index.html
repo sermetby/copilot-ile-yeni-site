@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yücel Kimya — Kimya Ürünleri & İhracat</title>
+  <meta name="description" content="Yücel Kimya — Endüstriyel kimya ürünleri, private label çözümleri ve dünya geneline ihracat." />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="Yücel Kimya" />
+  <meta property="og:title" content="Yücel Kimya — Kimya Ürünleri & İhracat" />
+  <meta property="og:description" content="Endüstriyel formülasyonlar, hammadde tedariki ve private label üretimi ile müşterilerimize katma değer sağlıyoruz." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Yücel Kimya" class="logo" style="height:34px;vertical-align:middle"/>
+        <span style="margin-left:.5rem;">Yücel Kimya</span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Ana navigasyon" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="products.html">Ürünler</a></li>
+          <li><a href="private-label.html">Private Label</a></li>
+          <li><a href="about.html">Biz Kimiz</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Yücel Kimya — Güvenilir Kimya Çözümleri, Dünya Geneline İhracat</h1>
+          <p class="lead">Endüstriyel formülasyonlar, hammadde tedariki ve private label üretimi ile müşterilerimize katma değer sağlıyoruz.</p>
+          <p class="hero-ctas">
+            <a class="btn" href="products.html">Ürünlerimiz</a>
+            <a class="btn ghost" href="private-label.html">Private Label</a>
+          </p>
+        </div>
+        <div class="hero-aside">
+          <div class="card highlight">
+            <h3>İhracat</h3>
+            <p>Aktif ihracat: Avrupa, Orta Doğu ve Kuzey Afrika. Lojistik ve gümrük süreçlerinde deneyimliyiz.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Vitrin Ürünler</h2>
+        <p class="muted">Temsilî olarak sektörlerinize uygun ana ürün kategorilerimiz.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Yüzey Aktif Maddeler (Surfactants)</h3>
+            <p>Temizlik ve kozmetik formülasyonları için çeşitli aktif maddeler.</p>
+          </div>
+          <div class="card">
+            <h3>Çözücüler & Seçici Ajanlar</h3>
+            <p>Endüstriyel uygulamalar için yüksek saflıkta çözücüler.</p>
+          </div>
+          <div class="card">
+            <h3>Katkı Maddeleri & Stabilizerler</h3>
+            <p>Ürün performansını ve raf ömrünü iyileştiren çözümler.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container split">
+        <div>
+          <h2>Private Label Hizmetleri</h2>
+          <p>Markanız için formülasyon geliştirme, ambalajlama ve ihracata hazırlanmış üretim hizmeti sunuyoruz. Hızlı örnek üretimi ve güvenilir kalite kontrol süreçleri ile destek sağlıyoruz.</p>
+          <p><a class="btn" href="private-label.html">Detaylı Bilgi</a></p>
+        </div>
+        <div>
+          <h2>Kalite & Sertifikalar</h2>
+          <ul class="simple-list">
+            <li>ISO 9001 — Kalite Yönetim Sistemi</li>
+            <li>GMP uygulamaları</li>
+            <li>Malzeme güvenlik veri sayfaları (MSDS) sağlanır</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>İletişim</h2>
+        <p>Form yerine hızlı iletişim: e-posta, telefon veya form eklenebilir.</p>
+        <form class="contact-form" action="#" method="post" onsubmit="alert('Form gönderme örneği — backend ekleyin'); return false;">
+          <label>
+            Adınız
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            E-posta
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Mesaj
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Gönder</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yücel Kimya — Tüm hakları saklıdır.</p>
+      <p class="muted">İhracat / Export enquiries: export@yucelkimya.example</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

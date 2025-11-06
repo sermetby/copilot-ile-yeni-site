@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Private Label — Yücel Kimya</title>
+  <meta name="description" content="Private label üretim, ambalajlama ve marka çözümleri — Yücel Kimya." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Yücel Kimya" style="height:28px;vertical-align:middle"/> <span style="margin-left:.5rem;">Yücel Kimya</span></a>
+      <button id="nav-toggle-3" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav-3">☰</button>
+      <nav id="primary-nav-3" class="primary-nav" aria-label="Ana navigasyon" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="products.html">Ürünler</a></li>
+          <li><a class="active" href="private-label.html">Private Label</a></li>
+          <li><a href="about.html">Biz Kimiz</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Private Label Çözümleri</h1>
+        <p class="muted">Markanız için formül geliştirme, ambalaj seçimi ve seri üretim. Ana hatlarıyla süreç:</p>
+
+        <ol class="steps">
+          <li>Gereksinim belirleme ve hedef pazar analizi</li>
+          <li>Formülasyon önerisi ve numune üretimi</li>
+          <li>Ambalaj ve etiketleme çözümleri (barkod, dil seçenekleri)</li>
+          <li>Testler, kalite kontrol ve seri üretim</li>
+          <li>Lojistik, etiket onayları ve ihracat hazırlıkları</li>
+        </ol>
+
+        <h2>Private Label Talep Formu</h2>
+        <form class="contact-form" name="private-label" method="POST" action="/thanks.html" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="private-label" />
+          <p style="display:none">
+            <label>Leave this field empty: <input name="bot-field" /></label>
+          </p>
+
+          <label>
+            Şirket / Marka Adı
+            <input type="text" name="company" required />
+          </label>
+          <label>
+            İlgili Kişi
+            <input type="text" name="contact" required />
+          </label>
+          <label>
+            İletişim E-posta
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Hedef Ürün / Kategori
+            <input type="text" name="product" />
+          </label>
+          <label>
+            Mesaj / Özel Gereksinimler
+            <textarea name="message" rows="4"></textarea>
+          </label>
+          <button class="btn" type="submit">Gönder</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-3"></span> Yücel Kimya</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
